@@ -162,9 +162,34 @@ body {
   clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
 }
 
-/* @media (max-width: 1025px) {}
+.testimonial-swiper .swiper-button-prev,
+.testimonial-swiper .swiper-button-prev::after,
+.testimonial-swiper .swiper-button-next,
+.testimonial-swiper .swiper-button-next::after {
+  color: var(--gray) !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  margin: 10px;
+  border-radius: 15px;
+}
 
-*/
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-prev::after,
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-next::after {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
+/*************************************************************************/
 @media (max-width: 1025px) {
 
   .companydiv,

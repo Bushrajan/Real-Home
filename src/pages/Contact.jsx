@@ -31,8 +31,8 @@ const Contact = () => {
   motion
   return (
     <div className="">
-      <Header />
 
+      <Header />
       {/* Hero Section */}
       <div className="relative overflow-hidden lg:py-40 py-10 md:py-30 lg:px-0 md:px-10 px-5
           bg-[url('https://www.thetopvillas.com/blog/wp-content/uploads/2020/11/rsz_157658394535972bbfb9774708d83ff0ef_2-2.jpg')] 
@@ -47,6 +47,7 @@ const Contact = () => {
       </div>
 
       <div className="max-w-6xl md:mb-20 mb-10 mx-auto grid grid-cols-1 md:gap-0 gap-8 md:grid-cols-2 md:px-6 px-2 md:py-12 " data-aos="fade-up" data-aos-duration="1500">
+       
         {/* Map Section */}
         <div className="w-full h-[300px] md:h-auto">
           <iframe
@@ -59,7 +60,7 @@ const Contact = () => {
         </div>
 
         {/* Form Section */}
-        <form className="bg-[#1CB2FF] md:rounded-r-3xl rounded    hover:shadow-md p-2 md:p-10 space-y-6"
+        <form className="bg-[#1CB2FF]  md:rounded-r-3xl rounded    hover:shadow-md p-2 md:p-10 space-y-6"
           onSubmit={handleSubmit}
         >
           <h2 className="text-4xl font-bold text-[white]">Let's talk...</h2>

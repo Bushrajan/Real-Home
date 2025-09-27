@@ -539,12 +539,13 @@ const AgentDetail = () => {
           <motion.h1
             initial={{ opacity: 0, y: -40 }} whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }} viewport={{ once: true }}
-            className='max-w-5xl mx-auto heading-h1 lg:text-5xl relative z-10 lg:text-left text-center md:text-4xl text-4xl text-white'>
+            className='max-w-6xl mx-auto heading-h1 lg:text-5xl relative z-5 lg:text-left text-center md:text-4xl text-4xl text-white'>
             {agent.name}
           </motion.h1>
         </div>
+        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-[100%] max-w-6xl"
+          data-aos="fade-up" data-aos-duration="1050">
 
-        <div className=" relative p-5 lg:absolute lg:left-[250px] lg:top-[140px] lg:p-3" data-aos="fade-up" data-aos-duration="1050">
           <div className="relative p-5">
             <div className="max-w-5xl lg:pb-0 pb-5 mx-auto lg:bg-[linear-gradient(90deg,_rgba(255,255,255,1)_81%,_rgba(28,178,255,1)_73%)] w-full h-full lg:shadow-md lg:bg-[#ffffff00] lg:pt-0 pt-10 bg-white rounded-lg lg:p-0 flex lg:flex-row flex-col  gap-4 items-center lg:justify-between justify-center">
               <div className="flex flex-wrap justify-center items-center ">
@@ -849,7 +850,7 @@ const AgentDetail = () => {
 
                         {/* Overlay Shade (hidden by default, visible on hover) */}
                         <div className="absolute inset-0 bg-[#1CB2FF] opacity-0 group-hover:opacity-20 transition-opacity duration-300 z-0"></div>
-                        
+
                         {/* View Property Button (hidden by default, visible on hover) */}
                         <div className="absolute top-[100px] lg:left-[130px] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
                           <Link
@@ -957,7 +958,6 @@ const AgentDetail = () => {
                 ))}
               </div>
             </div>
-
 
             <div className="flex justify-center items-center gap-2 mt-8">
               <button className="p-3 border border-gray-400 bg-white rounded-full transition"

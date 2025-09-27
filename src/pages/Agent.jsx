@@ -504,13 +504,13 @@ const Agent = () => {
           <motion.h1
             initial={{ opacity: 0, y: -40 }} whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }} viewport={{ once: true }}
-            className='heading-h1 lg:text-5xl relative z-10 text-center md:text-4xl text-4xl text-white'>
+            className='heading-h1 lg:text-5xl relative z-5 text-center md:text-4xl text-4xl text-white'>
             Our Agents
           </motion.h1>
         </div>
 
-        <div className=" relative p-5 lg:absolute lg:left-[250px] lg:top-[300px] lg:p-3" data-aos="fade-up" data-aos-duration="1050">
-          <div className="relative p-5">
+         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-[100%] max-w-6xl"
+        data-aos="fade-up" data-aos-duration="1050">  <div className="relative p-5">
             <div className="max-w-5xl lg:pb-0 pb-5 mx-auto lg:bg-[linear-gradient(90deg,_rgba(255,255,255,1)_81%,_rgba(28,178,255,1)_73%)] w-full h-full lg:shadow-md lg:bg-[#ffffff00] lg:pt-0 pt-10 bg-white rounded-lg lg:p-0 flex lg:flex-row flex-col  gap-4 items-center lg:justify-between justify-center">
               <div className="flex flex-wrap justify-center items-center ">
                 {dropdowns.map((item, i) => (
