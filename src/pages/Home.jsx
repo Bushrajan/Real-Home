@@ -61,6 +61,7 @@ const Home = () => {
     },
 
   ]
+  
   const cardData2 = [
     {
       title: "Apartment",
